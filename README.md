@@ -24,7 +24,7 @@ Support de développement :
 Méthode d'installation :
     Se placer dans la racine du dépôt.
     Cliquer sur Clone or Download.
-    Récupérer l'url (https://github.com/SACMVK/LudothequeBTS.git).
+    Récupérer l'url (https://github.com/SACMVK/LudothequeAvance.git).
     Sous votre IDE faites un Git > Clone et insérer l'url copiée au préalable.
     Le contenu étant important, le chargement peut durer.
     Dans un premier temps, il faut insérer le script de création de la base de donnée.

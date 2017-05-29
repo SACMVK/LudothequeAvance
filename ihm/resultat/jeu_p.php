@@ -11,7 +11,7 @@
     <a class="boutonBlanc" href='index.php?page=connexion/connexion.php'>connectez-vous</a>
 <?php endif; ?>
     
-<div class="blocList">
+<div class="bordureBleue">
     <h1><?= $element->getJeuT()->getNom() ?> appartenant à <?= $element->getProprietaire()->getPseudo() ?>
         (<?= $element->getProprietaire()->getCodePostal() ?>)</h1>  
     <?php

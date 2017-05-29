@@ -14,7 +14,7 @@ function str_truncate($text, $length) {
     if (!empty($listOfElements)):
         foreach ($listOfElements as $jeu_t) :
             ?> 
-<div class="blocList">
+<div class="bordureBleue">
 
                 <h1><?= $jeu_t->getNom() ?></h1>
                 <p><strong>Nombre de joueurs :</strong> De <?= $jeu_t->getNbJoueursMin() ?> à <?= $jeu_t->getNbJoueursMax() ?></p>

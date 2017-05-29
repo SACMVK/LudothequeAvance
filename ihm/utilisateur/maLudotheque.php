@@ -5,7 +5,7 @@
 if (!empty($_SESSION["maLudotheque"])):
     foreach ($_SESSION["maLudotheque"] as $jeuP) :
         ?>
-        <div class="blocList"> 
+        <div class="bordureBleue"> 
             Identifiant : <?= $jeuP->getIdJeuP() ?><br/>
             Nom : <?= $jeuP->getJeuT()->getNom() ?><br/>
             Editeur : <?= $jeuP->getJeuT()->getEditeur() ?><br/>                 

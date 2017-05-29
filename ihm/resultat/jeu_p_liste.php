@@ -4,7 +4,7 @@
     if (!empty($listOfElements)):
         foreach ($listOfElements as $jeu_p) :
             ?>        
-             <div class="blocList">
+             <div class="bordureBleue">
                  Nom du jeu : <?= $jeu_p->getJeuT()->getNom() ?><br/>
                  Propriétaire : <?= $jeu_p->getProprietaire()->getPseudo() ?><br/>
                  Code postal : <?= $jeu_p->getProprietaire()->getCodePostal() ?><br/>

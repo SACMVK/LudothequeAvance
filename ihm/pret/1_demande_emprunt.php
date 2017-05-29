@@ -1,4 +1,4 @@
-<div class="blocList">
+<div class="bordureBleue">
     <form action=" " method="post" accept-charset="utf-8">
         Envoyer une demande de prêt à <b><?= $jeuP->getProprietaire()->getPseudo() ?></b>
         de son jeu <b><?= $jeuP->getJeuT()->getNom() ?></b>

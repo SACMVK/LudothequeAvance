@@ -1,4 +1,4 @@
-<div class="blocList"> 
+<div class="bordureBleue"> 
     Identifiant du prêt: <?= $emprunt->getIdPret() ?><br/>
     Jeu emprunté : <?= $emprunt->getJeuP()->getJeuT()->getNom() ?><br/>
     Emprunteur : <?= $emprunt->getEmprunteur()->getPseudo() ?><br/>    

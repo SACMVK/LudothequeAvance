@@ -45,7 +45,7 @@
             include 'controller/controllerConnexion.php';
         } else if (!empty($_REQUEST['objectToWorkWith'])) {
             include 'controller/controllerRequete.php';
-        } else if (!empty($_REQUEST['user']) && empty($_REQUEST['idPret'])) {
+        } else if (!empty($_REQUEST['user']) && empty($_REQUEST['idPret']) && empty($_REQUEST['idMessage'])) {
             include 'controller/controllerUser.php';
         } else if (!empty($_REQUEST['formulaire'])) {
             include 'controller/controllerFormulaire.php';

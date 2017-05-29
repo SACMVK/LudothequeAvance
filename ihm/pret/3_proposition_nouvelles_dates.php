@@ -1,4 +1,4 @@
-<div class="blocList">
+<div class="bordureBleue">
     <form action=" " method="post" accept-charset="utf-8">
         Vous souhaitez proposer de nouvelles dates d'emprunt de votre jeu 
         <b><?= $pret->getJeuP()->getJeuT()->getNom() ?></b>

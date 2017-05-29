@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE config SYSTEM "../donnes/dtd/config.dtd">
+<config>
+	<option>
+		<nom>afficherIdPreteurDansNotation</nom>
+		<texte_affichage>Faut-il montrer le nom du prêteur dans la notation ?</texte_affichage>
+		<valeur>true</valeur>
+	</option>
+		<option>
+		<nom>nbEmpruntsAvantDemandePartageJeu</nom>
+		<texte_affichage>Quel est le nombre d'emprunts possibles avant la demande de partage de jeu ?</texte_affichage>
+		<valeur>3</valeur>
+	</option>	<option>
+		<nom>nbEmpruntsAvantDemandeInvitation</nom>
+		<texte_affichage>Quel est le nombre d'emprunts possibles avant la demande de'invitation' ?</texte_affichage>
+		<valeur>3</valeur>
+	</option>	<option>
+		<nom>validationNouvelleFicheProduitCulturel</nom>
+		<texte_affichage>Qui valide une nouvelle fiche de produit ?</texte_affichage>
+		<valeur>admin</valeur>
+	</option>	<option>
+		<nom>validationNouvelUser</nom>
+		<texte_affichage>Qui valide l'inscription d'un nouvel utilisateur ?</texte_affichage>
+		<valeur>user</valeur>
+	</option>	<option>
+		<nom>autoriserCommentairesSurUser</nom>
+		<texte_affichage>Les commentaires sur les utilisateurs sont-ils autorisés ?</texte_affichage>
+		<valeur>true</valeur>
+	</option>	<option>
+		<nom>autoriserCommentairesSurJeuP</nom>
+		<texte_affichage>Les commentaires sur l'exemplaire physique du produit échangé sont-ils autorisés ?</texte_affichage>
+		<valeur>false</valeur>
+	</option>	<option>
+		<nom>autoriserCommentairesSurProduitCulturelT</nom>
+		<texte_affichage>Les commentaires sur le produit culturel sont-ils autorisées ?</texte_affichage>
+		<valeur>true</valeur>
+	</option>	<option>
+		<nom>voirNotationProduitCulturelT</nom>
+		<texte_affichage>Les notations du produit culturelles sont-elles autorisées ?</texte_affichage>
+		<valeur>false</valeur>
+	</option>	<option>
+		<nom>voirNotationUser</nom>
+		<texte_affichage>Les notations des utilisateurs sont-elles autorisées ?</texte_affichage>
+		<valeur>true</valeur>
+	</option>	<option>
+		<nom>moderation</nom>
+		<texte_affichage>Qui s'occupe de la modération ?</texte_affichage>
+		<valeur>mid-admin</valeur>
+	</option>	<option>
+		<nom>limiteMinimumAgePublic</nom>
+		<texte_affichage>Quel est l'âge minimum du public du site ?</texte_affichage>
+		<valeur>3</valeur>
+	</option>	<option>
+		<nom>limiteMaximumAgePublic</nom>
+		<texte_affichage>Quel est l'âge maximum du public du site ?</texte_affichage>
+		<valeur>5</valeur>
+	</option>
+</config>

@@ -1,0 +1,19 @@
+#table_recherche_individu
+{
+
+    border:2px solid;
+    padding: 6px;
+    margin-left: 40px;
+    font-family: Time New Romain;
+    background-color: #dff0d8;
+
+
+}
+#titre{
+    font-family: Time New Romain;
+    font-size: 30px;
+    margin-left: 30px;
+}
+#button-table{
+    margin-left: 800px;
+}

@@ -1,0 +1,91 @@
+.boutonBleu {
+    display: inline-block;
+    background-color: #208f8f;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color : white;
+    border: none;
+    border-radius: 20px;
+    margin : 0.5em;
+    text-decoration: none;
+}
+
+.boutonBleu:active {
+    box-shadow: 3px 3px 1px rgba(38,42,53,0.8) inset, 0px 0px 2px rgba(10,10,10,0.5) inset;
+    text-decoration: none;
+}
+.boutonBleu:hover{
+    color : white;
+    text-decoration: none;
+}
+
+.boutonBlanc {
+    display: inline-block;
+    background-color: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color : #1f2021;
+    border: solid 1px #208f8f;
+    border-radius: 10px;
+    margin : 0.5em;
+    text-decoration: none;
+}
+
+
+
+.boutonBlanc:active {
+    box-shadow: 3px 3px 1px rgba(38,42,53,0.8) inset, 0px 0px 2px rgba(10,10,10,0.5) inset;
+    text-decoration: none;
+}
+.boutonBlanc:hover{
+    color : #1f2021;
+    text-decoration: none;
+}
+
+.boutonGris {
+    display: inline-block;
+    background-color: #1f2021;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color : #dfe8ee;
+    border: none;
+    border-radius: 10px;
+    margin : 0.5em;
+    text-decoration: none;
+}
+
+
+
+.boutonGris:active {
+    box-shadow: 3px 3px 1px rgba(38,42,53,0.8) inset, 0px 0px 2px rgba(10,10,10,0.5) inset;
+    text-decoration: none;
+}
+.boutonGris:hover{
+    color : white;
+    text-decoration: none;
+}
+
+.boutonTransparent {
+    display: inline-block;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    border-radius: 10px;
+    margin : 0.5em;
+    text-decoration: none;
+}
+
+
+
+.boutonTransparent:active {
+    box-shadow: 3px 3px 1px rgba(38,42,53,0.8) inset, 0px 0px 2px rgba(10,10,10,0.5) inset;
+    text-decoration: none;
+}
+.boutonTransparent:hover{
+    color : white;
+    text-decoration: none;
+}

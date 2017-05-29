@@ -1,0 +1,5 @@
+<!ELEMENT config (option*)>
+<!ELEMENT option (nom,texte_affichage,valeur)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT texte_affichage (#PCDATA)>
+<!ELEMENT valeur (#PCDATA)>

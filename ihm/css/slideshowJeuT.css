@@ -1,0 +1,42 @@
+.slideshowJeuT {
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+    display: block;
+    margin: 0px auto;
+}
+
+.slideshowJeuT img {
+    /* récupération d'un décalage hérité d'origine inconnue */
+    width: 320px;
+    height: 320px;
+    display: block;
+    position: relative;
+    float:left;
+    margin: 0px;
+    right: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+    .slideshowJeuT {
+        /* Bridage de la taille maximale des images */
+        max-height: 240px;
+        max-width: 240px;
+    }
+    .slideshowJeuT img {
+        /* Bridage de la taille maximale des images */
+        max-height: 240px;
+        max-width: 240px;
+    }
+}
+
+
+.slideshowJeuT ul {
+    list-style: none;
+}
+
+.slideshowJeuT li {
+    float: left;
+    display: block;
+    margin: auto;
+}

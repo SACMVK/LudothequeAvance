@@ -1,0 +1,36 @@
+/* stefan : champs de données */
+#config .valeur_option_boolean, #config .valeur_option_number, #config .valeur_option_select {
+	width: 100px;
+	text-align: center;
+	/* stefan : deux lignes afin de centrer les champs de données */
+	display: block;
+	margin: auto;
+}
+
+#config .text {
+	text-align: center;
+}
+
+/* stefan : bouton pour sauvegarder la config */
+#config .bouton_config{
+	/* stefan : deux lignes afin de centrer le bouton */
+	display: block;
+	margin: auto;
+	/* stefan : ajout d'espace autour du mot */
+	padding: 5px;
+	width: 50%;
+}
+
+/* stefan : zone d'option */
+#config {
+	padding-top: 50px;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-bottom: 50px;
+}
+
+#config HR {
+}
+
+
+

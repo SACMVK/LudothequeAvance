@@ -1,48 +1,32 @@
-<p id='titre'>Les résultats de votre recherche : </p>
-<div class="container">
-    <div class="table-responsive">
-        <table class="table" id="table-recherche" > 
-            <thead> 
-                <tr class="tr">  
-                    <th id="table-recherche">Pseudo</th> 
-                    <th id="table-recherche">Nom</th> 
-                    <th id="table-recherche">Prénom</th> 
-                    <th id="table-recherche">Ville</th> 
-                    <th id="table-recherche">Département</th> 
-                </tr> 
-            <thead> 
-            <tbody> 
-
-                <?php
-                if (!empty($listOfElements)):
-                    foreach ($listOfElements as $compte) :
-                        ?>
-                        <tr> 
-                            <td id="table-recherche"><?= $compte->getPseudo() ?></td>
-                            <td id="table-recherche"><?= $compte->getNom() ?></td>
-                            <td id="table-recherche"><?= $compte->getPrenom() ?></td>
-                            <td id="table-recherche"><?= $compte->getVille() ?></td>
-                            <td id="table-recherche"><?= $compte->getDept() ?></td>
-                        </tr> 
-                        <?php
-                    endforeach;
-                else:
-                    ?>
-                    <tr>
-                        <td>Aucun résultat</td>
-                    </tr>
-                <?php
-                endif;
-                ?>
-            </tbody>
-        </table>
-        <div id="button-table" ><br />
-            <a href="index.php?page=recherche/individu.php" class="boutonBlanc">Modifier ma recherche</a>
-            <br />
-            <br />
+<a href="index.php?page=recherche/individu.php" class="boutonBlanc">Modifier ma recherche</a>
+<?php
+if (!empty($listOfElements)):
+    foreach ($listOfElements as $compte) :
+        ?>
+        <div class="bordureBleue">
+            Pseudo : <?= $compte->getPseudo() ?><br/>
+            Nom : <?= $compte->getNom() ?><br/>
+            Prénom : <?= $compte->getPrenom() ?><br/>
+            Ville : <?= $compte->getVille() ?><br/>
+            Département : <?= $compte->getDept() ?><br/>
+            Code postal : <?= $compte->getCodePostal() ?><br/>
+            <form action=" " method="post" accept-charset="utf-8" class="form" role="form">
+                <input type=hidden name="compte#idUser" value="<?= $compte->getIdUser() ?>" />
+                <input type=hidden name="objectToWorkWith" value="individu" />
+                <input type=hidden name="actionToDoWithObject" value="selectOne" />
+                <input type="image" name="submit" class="boutonTransparent" value="Voir la fiche complète" src="ihm/img/loupe.png">
+            </form> 
         </div>
-    </div>
-</div> 
+        <?php
+    endforeach;
+else:
+    ?>
+    Aucun résultat
+<?php
+endif;
+?>
+<a href="index.php?page=recherche/individu.php" class="boutonBlanc">Modifier ma recherche</a>
+
 
 
 

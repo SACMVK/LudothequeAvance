@@ -8,7 +8,6 @@
                         <?php if ($droitsUser == "Administrateur" ): ?>
                         <p class="titre_menu">Menu administrateur</p><hr/>
                             <a href='index.php?page=administrateur/config.php'><li>Configuration</li></a>
-<!--                            <a href='index.php?page=pages/_old/_enCours.php'><li>Administrer les utilisateurs</li></a>-->
                         <?php endif; ?>
                         <?php if ($droitsUser == "Modérateur" || $droitsUser == "Administrateur"): ?>
                             <p class="titre_menu">Menu modérateur</p><hr/>
@@ -23,7 +22,6 @@
                         <a href='index.php?user=mesMessagesEnvoyes'><li>Mes messages envoyés</li></a>
                         <a href='index.php?user=mesMessagesRecus'><li>Mes messages reçus</li></a>
                         <a href='index.php?page=creation/jeu_t.php'><li>Proposer un nouveau jeu</li></a>
-<!--                        <a href='index.php?page=creation/message.php'><li>Envoyer un message</li></a>-->
                     </ul>
                 </div>
             </div>

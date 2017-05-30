@@ -54,10 +54,10 @@ class Individu extends Compte {
 
     // AhMaD: ToString pour afficher l'objet, le point pour concaténer, cela comme (+) en java
     function __toString() {
-        return( "id= " . $this->idUser . ", Email :" . $this->email . ", N° tel: " . $this->telephone . ", Pseudo: " . $this->pseudo
-                . ", Date d'nscription: " . $this->dateInscription . ", Mot de passe : " . $this->mdp . ", Droit: " . $this->droit . ", Nom: "
-                . $this->nom . ", Prenom" . $this->prenom . ", Date de Naissance: " . $this->dateNaissance . ", Address complète est :  ville:" . $this->ville .
-                ", Adresse" . $this->adresse . ", code postal" . $this->codePostal . ", departement:" . $this->dpt);
+        return( "id= " . $this->getIdUser() . ", Email :" . $this->getEmail() . ", N° tel: " . $this->getTelephone() . ", Pseudo: " . $this->getPseudo()
+                . ", Date d'nscription: " . $this->getDateInscription() . ", Mot de passe : " . $this->getMdp() . ", Droit: " . $this->getDroit() . ", Nom: "
+                . $this->nom . ", Prenom" . $this->prenom . ", Date de Naissance: " . $this->dateNaissance . ", Address complète est :  ville:" . $this->getVille() .
+                ", Adresse" . $this->getAdresse() . ", code postal" . $this->getCodePostal() . ", departement:" . $this->getDept());
     }
 
 }

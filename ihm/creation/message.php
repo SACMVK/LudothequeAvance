@@ -1,6 +1,6 @@
-<?php if (empty($_REQUEST["idMessage"])) : ?>
-    <legend>Envoyer un message</legend>
-<?php else : ?>
+<?php if (!empty($_REQUEST["idMessage"])) : ?>
+    <legend>Répondre à un message</legend>
+<?php elseif (!empty($_REQUEST["idDest"])): ?>
     <legend>Répondre à un message</legend>
 <?php endif; ?>
 
@@ -9,10 +9,13 @@ if (!empty($_REQUEST["idMessage"])) {
     include 'job/dao/Message_Dao.php';
     $ancienMessage = select("where idMessage = " . $_REQUEST["idMessage"])[0];
     $pseudoDest = $ancienMessage->getExp()->getPseudo();
+} elseif ($_REQUEST["idDest"]) {
+    $pseudoDest = $_REQUEST["idDest"];
 } else {
     $pseudoDest = "";
 }
 ?>
+
 <div class="bordureBleue"> 
     <form action=" " method="post" accept-charset="utf-8" class="form" role="form">
         Destinataire : <input type="text"  placeholder="pseudo du destinataire" name="pseudoDest" value="<?= $pseudoDest ?>" required />
